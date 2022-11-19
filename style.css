@@ -1,0 +1,167 @@
+:root {
+    --bg-color: hsl(235, 16%, 14%);
+    --text-color: azure;
+}
+
+.darktheme {
+    --bg-color: azure;
+    --text-color: hsl(235, 16%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 94vw;
+    height: 10vh;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.wrapper {
+
+    margin: 0 auto;
+    background-color: transparent;
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+#bg-stars {
+    position: absolute;
+    top: 0;
+}
+
+#hills {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.timer {
+    display: grid;
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    row-gap: 0;
+    column-gap: 0;
+}
+
+.card {
+    width: 140px;
+    height: 80px;
+    text-align: center;
+
+}
+
+.card-style {
+
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: hsl(345, 95%, 68%);
+    text-align: center;
+    width: 110px;
+    height: 80px;
+    border: 3px solid hsl(236, 21%, 26%);
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px 0 hsl(236, 21%, 26%);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--text-color);
+    letter-spacing: 8px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+    letter-spacing: 5px;
+}
+
+.socials a {
+    margin: 10px;
+}
+
+.socials a:hover {
+    color: hsl(345, 95%, 68%);
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.fa-moon {
+    font-size: 25px;
+    color: #e0e4e9;
+
+}
+
+.fa-sun {
+    font-size: 25px;
+    color: #eaedf1;
+
+}
+
+@media screen and(max-width:401spx) {
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .card {
+        width: 80px;
+        height: 25vh;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .card-style {
+
+        font-size: 25px;
+        width: 60px;
+        height: 18vh;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .timer {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 80px;
+        height: 25vh;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .card-style {
+
+        font-size: 25px;
+        width: 60px;
+        height: 18vh;
+    }
+}
